@@ -22,15 +22,15 @@ Find the value of n so that $\frac{a^{n+1} + b^{n+1}}{a^{n}+b^{n}}$ may be the g
 \input{./tables/tab2.tex}
 \end{table}
 
-Geometric mean of $a$ and $b$ : $\sqrt{ab}$
+Consider a GP as in \tabref{tab:1}
 \begin{align}
-\therefore \frac{a^{n+1} + b^{n+1}}{a^{n}+b^{n}} &= \sqrt{ab} \\
-\implies a^{n+1} + b^{n+1} &= a^{n+\frac{1}{2}}b^{\frac{1}{2}} + a^{\frac{1}{2}}b^{n+\frac{1}{2}} \\
-\implies a^{n+1} - a^{n+\frac{1}{2}}b^{\frac{1}{2}} &=  a^{\frac{1}{2}}b^{n+\frac{1}{2}} - b^{n+1} \\
-\implies a^{n+\frac{1}{2}}(a^{\frac{1}{2}} - b^{\frac{1}{2}}) &= b^{n+\frac{1}{2}}(a^{\frac{1}{2}} - b^{\frac{1}{2}}) \\
-\implies a^{n+\frac{1}{2}} &= b^{n+\frac{1}{2}} \\
-\implies (\frac{a}{b})^{n+\frac{1}{2}} &= (\frac{a}{b})^{0} \\
+	\therefore \frac{(x(0))^{n+1} + (x(2))^{n+1}}{(x(0))^{n}+(x(2))^{n}} &= x(1) \\
+	\implies \frac{(x(0))^{n+1} + (x(0)r^{2})^{n+1}}{(x(0))^{n} + (x(0)r^{2})^{n}} &= x(0)r \\
+	\implies \frac{(x(0))^{n+1}(r^{2n+2} + 1)}{(x(0))^{n}(r^{2n}+1)} &= x(0)r \\
+	\implies r^{2n+2} + 1 &= r^{2n+1} + r \\
+	\implies r^{2n+2}(r-1) &= r - 1 \\
+	\implies r^{2n+1} &= r^{0} \\
 \implies n + \frac{1}{2} &= 0 \\
-\implies n &= \frac{1}{2}
+\implies n &= -\frac{1}{2}
 \end{align}
 \end{document}
