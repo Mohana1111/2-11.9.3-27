@@ -25,18 +25,16 @@ Find the value of $n$ so that $\frac{a^{n+1} + b^{n+1}}{a^{n}+b^{n}}$ may be the
 Consider a GP as in \tabref{tab:1},
 \begin{align}
 	\therefore \frac{a^{n+1} + b^{n+1}}{a^{n}+b^{n}} &= x(1) \\
-	\implies a^{n+1} + b^{n+1} &= a^{n+\frac{1}{2}}b^{\frac{1}{2}} + a^{\frac{1}{2}}b^{n+\frac{1}{2}} \\ 
-\implies a^{n+1} - a^{n+\frac{1}{2}}b^{\frac{1}{2}} &=  a^{\frac{1}{2}}b^{n+\frac{1}{2}} - b^{n+1} \\ 
-\implies a^{n+\frac{1}{2}}(a^{\frac{1}{2}} - b^{\frac{1}{2}}) &= b^{n+\frac{1}{2}}(a^{\frac{1}{2}} - b^{\frac{1}{2}}) \\     
-\implies a^{n+\frac{1}{2}} &= b^{n+\frac{1}{2}} \\ 
+	\implies a^{n+1} + b^{n+1} &= a^{n+\frac{1}{2}}b^{\frac{1}{2}} + a^{\frac{1}{2}}b^{n+\frac{1}{2}} \\
+\implies a^{n+\frac{1}{2}}(a^{\frac{1}{2}} - b^{\frac{1}{2}}) &= b^{n+\frac{1}{2}}(a^{\frac{1}{2}} - b^{\frac{1}{2}}) \\
 \implies (\frac{a}{b})^{n+\frac{1}{2}} &= (\frac{a}{b})^{0} \\
-\implies n + \frac{1}{2} &= 0 \\
 \implies n &= -\frac{1}{2}
 \end{align}
 From \tabref{tab:1},
 \begin{align}
-	X(z) &= \sum_{k=-\infty}^{\infty} (ar^{k})u(k) \\
-	&= a(\frac{1}{1-r})(\frac{1}{1-z^{-1}}) \\
-	&= a(\frac{1}{1-\sqrt(\frac{b}{a})})(\frac{1}{1-z^{-1}})
+	X(z) &= \sum_{k=-\infty}^{\infty} (ar^{k})u(k)z^{-k} \\
+	&= a(1+rz^{-1}+r^{2}z^{-2}+...)U(z) \\
+	&= a{\frac{1}{1-rz^{-1}}}{\frac{1}{1-z^{-1}}} \quad \abs{z}>1 \\
+	&= a{\frac{1}{1-(\sqrt{\frac{b}{a}})z^{-1}}}{\frac{1}{1-z^{-1}}} \quad \abs{z}>1
 \end{align}
 \end{document}
