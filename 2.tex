@@ -33,8 +33,7 @@ Consider a GP as in \tabref{tab:1},
 From \tabref{tab:1},
 \begin{align}
 	X(z) &= \sum_{k=-\infty}^{\infty} (ar^{k})u(k)z^{-k} \\
-	&= a(1+rz^{-1}+r^{2}z^{-2}+...)U(z) \\
-	&= a{\frac{1}{1-rz^{-1}}}{\frac{1}{1-z^{-1}}} \quad \abs{z}>1 \\
-	&= a{\frac{1}{1-(\sqrt{\frac{b}{a}})z^{-1}}}{\frac{1}{1-z^{-1}}} \quad \abs{z}>1
+	&= \sum_{k=-\infty}^{\infty}a(rz^{-1})^{n} \\
+	&= \frac{a}{1-(\sqrt{\frac{b}{a}})z^{-1}} \quad \abs{z}>\abs{\sqrt{\frac{b}{a}}}
 \end{align}
 \end{document}
